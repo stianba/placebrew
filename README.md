@@ -34,5 +34,16 @@ Great observation. Nice to see you're sobering up. Currently there are four func
 
 * `/a` (Aspect Ratio) pours a brew image that fits best your selected width and height dimentions.
 * `/random` pours you a totally random brew image.
-* `/specific` lets you specify the name of the brew you want. **Ex:** `placebrew.com/brew/image/specific/ipa_01/200/400`
-* `/type` lets you specify the type (coffee or beer) and/or the style (IPA, black, amber ale) of the brew you want
+* `/specific/:brewName` lets you specify the name of the brew you want.
+* `/type/:typeName/:styleName` lets you specify the type (coffee or beer) and/or the style (IPA, black, amber ale) of the brew you want
+
+**Remember:** Width and height values are always optional no matter what kind of functionality you want. If you don't set any width or height values, the brew will retain its original pixel size.
+
+##### Examples
+* `placebrew.com/brew/image/a/200` pours a 200px by 200px square brew
+* `placebrew.com/brew/image/random` pours a random brew in its original dimensions
+* `placebrew.com/brew/image/random/500/600` pours a random 500px by 600px brew
+* `placebrew.com/brew/image/specific/ipa_01/50/2000` pours a really narrow, but delicious ipa_01.jpg brew
+* `placebrew.com/brew/image/type/coffee/478/254` pours a 478px by 254px coffee brew
+* `placebrew.com/brew/image/type/coffee/black/347/` pours a 347 by 347 square black coffee brew
+
