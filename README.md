@@ -38,7 +38,7 @@ Great observation. Nice to see you're sobering up. Currently there are four func
 * `/specific/:brewName` lets you specify the name of the brew you want.
 * `/type/:typeName/:styleName` lets you specify the type (coffee or beer) and/or the style (IPA, black, amber ale) of the brew you want
 
-**Remember:** Width and height values are always optional no matter what kind of functionality you want. If you don't set any width or height values, the brew will retain its original pixel size.
+**Remember:** Width and height values are always optional, no matter what kind of functionality you want. If you don't set any width or height values, the brew will retain its original pixel size.
 
 ##### Examples
 * `placebrew.com/brew/image/a/200` pours a 200px by 200px square brew
