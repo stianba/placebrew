@@ -32,7 +32,7 @@ What does this mean, wizard?
 #### You mentioned "Aspect Ratio" functionality. Are there more functionality-ies?
 Great observation. Nice to see you're sobering up. Currently there are four functionalities:
 
-* `/a` pours a brew image that fits best your selected width and height dimentions.
+* `/a` (Aspect Ratio) pours a brew image that fits best your selected width and height dimentions.
 * `/random` pours you a totally random brew image.
 * `/specific` lets you specify the name of the brew you want
 * `/type/style` lets you specify the type (coffee or beer) and/or the style (IPA, black, amber ale) of the brew you want
