@@ -15,11 +15,13 @@ mongoose.connect('mongodb://localhost:27017/brews');
 var app = express();
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
+app.set('views', __dirname + '/client/views');
+app.set('view engine', 'jade');
 
 // Configure static content
 app.use('/assets', express.static(__dirname + '/assets'));
-app.use('/client/bower_components', express.static(__dirname + '/client/bower_components'));
-app.use('/client/styles', express.static(__dirname + '/client/styles'));
+app.use('/css', express.static(__dirname + '/client/css'));
+app.use('/js', express.static(__dirname + '/client/js'));
 
 // Require routes
 require('./server/routes.js')(app);

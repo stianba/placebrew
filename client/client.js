@@ -4,11 +4,11 @@ var express = require('express');
 var router = express.Router();
 
 router.get('/', function(req, res) {
-	res.sendfile('./client/index.html');
+	res.render('home');
 });
 
 router.get('/brews', function(req, res) {
-	res.sendfile('./client/brews.html');
+	res.render('brews');
 });
 
 module.exports = router;
