@@ -46,5 +46,5 @@ Great observation. Nice to see you're sobering up. Currently there are four func
 * `placebrew.com/brew/image/random/500/600` pours a random 500px by 600px brew
 * `placebrew.com/brew/image/specific/ipa_01/50/2000` pours a really narrow, but delicious ipa_01.jpg brew
 * `placebrew.com/brew/image/type/coffee/478/254` pours a 478px by 254px coffee brew
-* `placebrew.com/brew/image/type/coffee/black/347/` pours a 347 by 347 square black coffee brew
+* `placebrew.com/brew/image/type/coffee/black/347` pours a 347 by 347 square black coffee brew
 
