@@ -17,7 +17,7 @@ Tiny brew: `http://placebrew.com/1/1`
 ### Brewmaster functionality
 The placebrew API has the functionality to cover all of your beer/coffee connoisseur needs.
 
-Remember earlier, when you we talked about the basic functionality? No? I know beer is great, but please keep yourself together.
+Remember earlier, when we talked about the basic functionality? No? I know beer is great, but please keep yourself together.
 
 Anyway, the basic functionality is basically (such vocabulary) a shorthand for `http://placebrew.com/brew/image/a/1920/1080`.
 
