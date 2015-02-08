@@ -10,9 +10,9 @@ Placebrew.com pours delicious servings of brew images (beer and coffee) based on
 ### Basic functionality
 Defining a custom /width and /height after the placebrew.com URL will pour a brew on your screen.
 
-#### Example
-HD brew: `http://placebrew.com/1920/1080`
-Tiny brew: `http://placebrew.com/1/1`
+##### Examples
+* HD brew: `http://placebrew.com/1920/1080`
+* Tiny brew: `http://placebrew.com/1/1`
 
 ### Brewmaster functionality
 The placebrew API has the functionality to cover all of your beer/coffee connoisseur needs.
