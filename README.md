@@ -42,7 +42,7 @@ Great observation. Nice to see you're sobering up. Currently there are four func
 
 ##### Examples
 * `placebrew.com/brew/image/a/200` pours a 200px by 200px square brew
-* `placebrew.com/brew/image/random` pours a random brew in its original dimensions
+* `placebrew.com/brew/image/random` pours a random brew in its original pixel size
 * `placebrew.com/brew/image/random/500/600` pours a random 500px by 600px brew
 * `placebrew.com/brew/image/specific/ipa_01/50/2000` pours a really narrow, but delicious ipa_01.jpg brew
 * `placebrew.com/brew/image/type/coffee/478/254` pours a 478px by 254px coffee brew
