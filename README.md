@@ -34,5 +34,5 @@ Great observation. Nice to see you're sobering up. Currently there are four func
 
 * `/a` (Aspect Ratio) pours a brew image that fits best your selected width and height dimentions.
 * `/random` pours you a totally random brew image.
-* `/specific` lets you specify the name of the brew you want
-* `/type/style` lets you specify the type (coffee or beer) and/or the style (IPA, black, amber ale) of the brew you want
+* `/specific` lets you specify the name of the brew you want. **Ex:** `placebrew.com/brew/image/specific/ipa_01/200/400`
+* `/type` lets you specify the type (coffee or beer) and/or the style (IPA, black, amber ale) of the brew you want
