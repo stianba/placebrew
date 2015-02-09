@@ -19,6 +19,11 @@ module.exports = function(model, queryAppendix, width, height) {
 			if(!isWithinMaxDimensions(height, width)) {
 				deferred.resolve({ code: 1, content: 0, content: "Pouring over" });
 			}
+
+			pouredBrew.width = width;
+			pouredBrew.height = height;
+
+			deferred.resolve({ code: 0, crop: 1, content: pouredBrew });
 		}
 	});
 
