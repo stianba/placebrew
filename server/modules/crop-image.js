@@ -4,6 +4,7 @@ var Deferred = require("promised-io/promise").Deferred;
 
 module.exports = function(imageObj) {
 	var deferred = new Deferred();
+	
 	im.crop({
 		srcPath: constants.IMAGES_FOLDER + imageObj.url,
 		width: imageObj.width,

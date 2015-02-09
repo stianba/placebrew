@@ -14,6 +14,10 @@ module.exports = function (grunt) {
 				files: ['client/scss/**/*.scss'],
 				tasks: ['sass']
 			},
+			coffee: {
+				files: ['client/js/**/*.coffee'],
+				tasks: ['coffee']
+			},
 			jade: {
 				files: ['client/**/*.jade']
 			}
@@ -30,12 +34,21 @@ module.exports = function (grunt) {
 					'client/css/main.css': 'client/scss/main.scss'
 				}
 			}
+		},
+
+		coffee: {
+			dist: {
+				files: {
+					'client/js/main.js': 'client/js/main.coffee'
+				}
+			}
 		}
 		
 	});
 	
 	grunt.registerTask('default', [
 		'sass',
+		'coffee',
 		'watch'
 	]);
 };
