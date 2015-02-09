@@ -11,7 +11,7 @@
 
 var _ = require('lodash');
 var BrewType = require('./brewType.model');
-var handleError = require('../../services/errorHandling');
+var handleError = require('../../modules/error-handling');
 
 // Get list of brew types
 exports.index = function(req, res) {

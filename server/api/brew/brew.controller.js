@@ -13,9 +13,8 @@ var _ = require('lodash');
 var Brew = require('./brew.model');
 var BrewStyle = require('../brew-style/brewStyle.model');
 var BrewType = require('../brew-type/brewType.model');
-var handleError = require('../../services/errorHandling');
-var pour = require('../../services/pour');
-var pourRandom = require('../../services/pourRandom');
+var handleError = require('../../modules/error-handling');
+var pourBrew = require('../../modules/pour-brew');
 
 // Get list of brews
 exports.index = function(req, res) {
@@ -36,35 +35,35 @@ exports.show = function(req, res) {
 
 // Pour a perfectly sized brew based on Width/Height GET parameters (Or default size)
 exports.pourByRatio = function(req, res) {
-	pour(Brew, {}, req, res);
+	pourBrew(res, Brew, 0, {}, req.params.width, req.params.height);
 };
 
 // Pour a specific brew
 exports.pourBySpecifiedBrew = function(req, res) {
-	pour(Brew, {url: req.params.brew + '.jpg'}, req, res);
+	pourBrew(res, Brew, 0, {name: req.params.brew.toLowerCase()}, req.params.width, req.params.height);
 }
 
 // Pour a random brew
 exports.pourByRandomBrew = function(req, res) {
-	pourRandom(Brew, '', req, res);
+	pourBrew(res, Brew, 1, {}, req.params.width, req.params.height);
 }
 
 // Pour by brew type
 exports.pourByBrewType = function(req, res) {
-	BrewType.find({name: req.params.type}, function(err, brewType) {
+	BrewType.find({name: req.params.type.toLowerCase()}, function(err, brewType) {
 		if(err) { return handleError(res, err); }
 		if(!brewType.length) { return res.send(404); }
-		
-		pourRandom(Brew, {brewType: brewType[0]._id}, req, res);
+
+		pourBrew(res, Brew, 1, {brewType: brewType[0]._id}, req.params.width, req.params.height);
 	});
 }
 
 // Pour by brew style
 exports.pourByBrewStyle = function(req, res) {
-	BrewStyle.find({name: req.params.style}, function(err, brewStyle) {
+	BrewStyle.find({name: req.params.style.toLowerCase()}, function(err, brewStyle) {
 		if(err) { return handleError(res, err); }
 		if(!brewStyle.length) { return res.send(404); }
-		
-		pour(Brew, {brewStyle: brewStyle[0]._id}, req, res);
+
+		pourBrew(res, Brew, 0, {brewStyle: brewStyle[0]._id}, req.params.width, req.params.height);
 	});
 }
