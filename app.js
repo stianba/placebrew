@@ -20,6 +20,7 @@ app.set('view engine', 'jade');
 
 // Configure static content
 app.use('/assets', express.static(__dirname + '/assets'));
+app.use('/bower_components', express.static(__dirname + '/client/bower_components'));
 app.use('/css', express.static(__dirname + '/client/css'));
 app.use('/js', express.static(__dirname + '/client/js'));
 
