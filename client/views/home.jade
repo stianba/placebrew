@@ -1,9 +1,24 @@
 extends ../layout.jade
 
 block content
-	div.branding
-		h1 placebrew
-			span Brewery
-		span.moustache
-			img(src='/assets/icons/moustache.svg')
-		span.subtitle Est. 1876
+	nav
+		a(href='https://github.com/stianba/placebrew')
+			i.fa.fa-github.fa-lg.fa-fw
+			span View on GitHub
+		a(href='/brews')
+			i.fa.fa-beer.fa-lg.fa-fw
+			span Brew Menu
+
+	div.how-to-use
+		h2 How to Use
+		p Easy, Madam or Sir. Gentlewomen and gentlemen pour brews using <em>placebrew.com</em>, adding /width and /height values to the url. Like this:
+		div.code http://placebrew.com/800/900
+		ul.footer
+			li
+				a(href='https://github.com/stianba/placebrew/blob/master/README.md').secondary
+					i.fa.fa-code.fa-lg.fa-fw
+					span Advanced functionality
+			li
+				a(href='https://twitter.com/StianBa').secondary
+					i.fa.fa-twitter.fa-lg.fa-fw
+					span @StianBa

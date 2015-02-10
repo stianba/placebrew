@@ -1,6 +1,12 @@
 body {
-	background: url('http://placebrew.com/1200/1200');
+	background-color: #F0E9DD;
+	background-image: url('/1200/1200');
+	background-repeat: no-repeat;
 	background-position: center top;
-	background-size: cover;
+	background-size: 1050px;
 	color: $text-color-main;
+
+	@media #{$large-up} {
+		background-size: cover;
+	}
 }

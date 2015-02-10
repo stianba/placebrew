@@ -26,7 +26,8 @@ module.exports = function (grunt) {
 		sass: {
 			options: {
 				includePaths: [
-					'client/bower_components/foundation/scss'
+					'client/bower_components/foundation/scss',
+					'client/bower_components/font-awesome/scss'
 				]
 			},
 			dist: {

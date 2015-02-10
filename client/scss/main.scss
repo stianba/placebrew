@@ -1,4 +1,6 @@
 @import "partials/settings";
+$fa-font-path: "/bower_components/font-awesome/fonts";
+@import "font-awesome";
 //@import "foundation";
 
 // Or selectively include components
@@ -57,6 +59,8 @@
    ========================================================================== */
 
 @import "partials/molecules/text";
+@import "partials/molecules/blocks";
+@import "partials/molecules/navigation";
 
 /* ==========================================================================
    Organisms
