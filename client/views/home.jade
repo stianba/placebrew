@@ -1,17 +1,13 @@
 extends ../layout.jade
 
 block content
-	nav
-		a(href='https://github.com/stianba/placebrew')
-			i.fa.fa-github.fa-lg.fa-fw
-			span View on GitHub
-		a(href='/brews')
-			i.fa.fa-beer.fa-lg.fa-fw
-			span Brew Menu
+	div.block.narrow
+		h2 Placebrew, You Say?
+		p.last Placebrew is a service for designers and developers that need delicious beer and coffee placeholder images.
 
-	div.how-to-use
-		h2 How to Use
-		p Easy, Madam or Sir. Gentlewomen and gentlemen pour brews using <em>placebrew.com</em>, adding /width and /height values to the url. Like this:
+	div.block.narrow
+		h2.first How to Use
+		p Easy. Pour a brew using <em>placebrew.com</em>, adding /width and /height values to the url. Like this:
 		div.code http://placebrew.com/800/900
 		ul.footer
 			li

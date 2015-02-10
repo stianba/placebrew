@@ -28,6 +28,7 @@ a {
 	text-rendering: auto;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+	color: $text-color-main;
 
 	h1 {
 		font-family: $font-heading;
@@ -62,13 +63,29 @@ h2 {
 	font-weight: 400;
 	font-style: italic;
 	line-height: 1.1em;
-	margin: .6em 0 0 0;
+	margin: .8em 0 0 0;
+	font-size: 1.4em;
+
+	&.first {
+		margin-top: 0;
+	}
 }
 
+h3 {
+	margin: 0;
+	line-height: 1.1em;
+	font-size: 1em;
+}
+
+p {
+	&.last {
+		margin-bottom: 0;
+	}
+}
 .code {
 	display: block;
 	font-family: "Courier New", Courier, monospace;
-	padding: $column-gutter / 2;
+	padding: $column-gutter / 3 $column-gutter / 2;
 	background-color: #111;
 	color: #fff;
 	border-radius: .4em;

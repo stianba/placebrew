@@ -2,11 +2,24 @@ body {
 	background-color: #F0E9DD;
 	background-image: url('/1200/1200');
 	background-repeat: no-repeat;
-	background-position: center top;
+	background-position: -400px top;
+	background-attachment: fixed;
 	background-size: 1050px;
 	color: $text-color-main;
 
+	@media #{$medium-up} {
+		background-size: 1300px;
+		background-position: -200px top;
+	}
+
 	@media #{$large-up} {
+		background-size: 1700px;
+		background-position: left -200px;
+	}
+
+	@media #{$xlarge-up} {
 		background-size: cover;
+		background-attachment: scroll;
+		background-position: left top;
 	}
 }

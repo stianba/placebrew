@@ -1,8 +1,15 @@
 extends ../layout.jade
 
 block title
-	title Brews	
+	title Brew Menu - Placebrew Brewery
+
+block subnav
+	a(href='/')
+		i.fa.fa-question-circle.fa-lg.fa-fw
+		span How-To
 	
 block content
-	h1 Placebrew Brewery
-	h2 Brew Menu
+	div.block.wide
+		h2 Brew Menu
+
+		ul.brews.masonry.small-block-grid-2.medium-block-grid-4

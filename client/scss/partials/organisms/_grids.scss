@@ -1,0 +1,36 @@
+.brews {
+	list-style: none;
+	margin-top: 1.5em;
+	margin-left: -$column-gutter / 2;
+	margin-right: -$column-gutter / 2;
+	padding: 0;
+
+	> li {
+		margin: 0;
+
+		> span {
+			padding: $column-gutter / 2;
+			background-color: rgba(255, 255, 255, .4);
+			display: block;
+
+			.image {
+				display: block;
+				width: 100%;
+
+				img {
+					display: block;
+					width: 100%;
+				}
+			}
+
+			.text {
+				display: block;
+				margin-top: $column-gutter / 3;
+			}
+		}
+
+		@media #{$medium-up} {
+			width: 25%;
+		}
+	}
+}
